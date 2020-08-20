@@ -1,42 +1,104 @@
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+}
+
 body {
-    background-color: #ececec;
-    width: 100%;
-    /* height: 100vh; */
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  background: #eeeeee;
+  color: #030303;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+header {
+  text-align: center;
+  padding: 3rem 0;
+  background-image: linear-gradient(120deg, #f093fb 0%, #f5576c 100%);
+  color: white;
+}
+
+header > h1 {
+  font-weight: normal;
+  font-style: italic;
 }
 
 main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  padding: 1rem 0;
 }
 
-button {
-    margin-top: 20px;
-    width: 70%;
-    height: 45px;
-    background-color: rgb(74, 185, 0);
-    border: none;
-    border-radius: 25px;
-    -webkit-border-radius: 25px;
-    -moz-border-radius: 25px;
-    -ms-border-radius: 25px;
-    -o-border-radius: 25px;
-    color: white;
-    font-size: 18px;
-    font-weight: bold;
-    letter-spacing: 1.5px;
-    cursor: pointer;
-    outline: none;
-    transition: 250ms all;
-    -webkit-transition: 250ms all;
-    -moz-transition: 250ms all;
-    -ms-transition: 250ms all;
-    -o-transition: 250ms all;
+.container {
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.movie {
+  width: 100%;
+}
+
+/* button {
+  margin-top: 20px;
+  width: 70%;
+  height: 45px;
+  background-color: rgb(74, 185, 0);
+  border: none;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+  outline: none;
+  transition: 250ms all;
+  -webkit-transition: 250ms all;
+  -moz-transition: 250ms all;
+  -ms-transition: 250ms all;
+  -o-transition: 250ms all;
 }
 
 button:hover {
-    background-color: rebeccapurple;
+  background-color: rebeccapurple;
+} */
+
+.ads {
+  padding: 4px;
+  padding-right: 8px;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  color: white;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.ads__link {
+  display: flex;
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.ads__img {
+  width: 80px;
+  min-width: 80px;
+  height: 80px;
+  margin-right: 16px;
+}
+
+.ads__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.ads__title {
+  margin: 0;
+}
+.ads__body {
+  margin: 0;
 }

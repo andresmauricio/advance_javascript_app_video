@@ -1,2 +1,4 @@
 node_modules
 assets/video.mp4
+.cache
+dist
